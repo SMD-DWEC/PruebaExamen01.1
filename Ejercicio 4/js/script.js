@@ -11,6 +11,7 @@ let caracteres = [
     'a', 'b', 'c','d','e','f','g','h','i'
 ];
 
+//Funcion que devuelve una lista con las palabras permitidas y no repetidas
 function listas(longitud, cadena) {
 
     const letras = 'abcdefghijklmnñopqrstuvwxyz';
@@ -35,7 +36,7 @@ function listas(longitud, cadena) {
 }
 
 
-//Comprueba si la palabra es o no permitida
+//Comprueba si la palabra está permitida o no.
 function allowed(palabra, prohibidas) {
 
     for(let i=0;i<prohibidas.length;i++) {
@@ -46,7 +47,7 @@ function allowed(palabra, prohibidas) {
     return true;
 }
 
-
+//Comprueba que la palabra NO esté repetida
 function esRepetida(lista,palabra) {
     for(let i=0;i<lista.length;i++) {
         if(palabra == lista[i])
